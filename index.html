@@ -1,0 +1,291 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Hair by Elisabeth · kaderníctvo v Dubnici nad Váhom — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh webu pre Hair by Elisabeth, Námestie Matice Slovenskej 4262/22, Dubnica nad Váhom: dámske, pánske a detské strihy, farbenie, melír, svadobné účesy.">
+<meta name="theme-color" content="#1F2C42">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cover:#1F2C42;     /* zem: plátenná väzba diára */
+  --cover-hi:#2A3A56;
+  --paper:#F5F6F2;     /* materiál: papier */
+  --paper-2:#ECEEE8;
+  --rule:#C9D6E4;      /* linajky */
+  --margin:#D98587;    /* okrajová linka */
+  --ink:#1C2230;
+  --pen:#2546A0;       /* modré pero */
+  --ribbon:#A61F3B;    /* akcent: záložka */
+  --soft:#5B6475;
+  --hand:"Dancing Script",cursive;
+  --book:"Libre Baskerville",Georgia,serif;
+  --lh:32px;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{color:var(--ink);font:400 16px/var(--lh) var(--book);
+  background-color:var(--cover);
+  background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.022) 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,rgba(0,0,0,.05) 0 1px,transparent 1px 3px)}
+img{max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ribbon);outline-offset:3px}
+.w{width:min(1180px,100% - 48px);margin-inline:auto}
+.sc{font:700 11.5px/1.3 var(--book);letter-spacing:.18em;text-transform:uppercase}
+.fig{font-variant-numeric:tabular-nums lining-nums}
+.hl{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s}
+.hl:hover{background-size:100% 1px}
+
+.strip{background:var(--paper);color:var(--ink);font:400 13px/1.5 var(--book);text-align:center;padding:9px 18px}
+
+.mast{color:var(--paper)}
+.mast .w{display:flex;align-items:center;gap:30px;min-height:84px}
+.mast .name{font:700 34px/1 var(--hand);text-decoration:none}
+.mast nav{display:flex;gap:26px;margin-left:auto;font:italic 400 15px var(--book)}
+.mast nav a{padding:12px 0}
+.mast .t{font:400 15px var(--book);text-decoration:none;border:1px solid rgba(245,246,242,.35);padding:10px 18px}
+.mast .t:hover{background:var(--paper);color:var(--cover)}
+
+/* papier */
+.pg{background-color:var(--paper);position:relative;
+  background-image:repeating-linear-gradient(to bottom,transparent 0 calc(var(--lh) - 1px),var(--rule) calc(var(--lh) - 1px) var(--lh));
+  background-position:0 var(--top,64px)}
+.pg.mg::before{content:"";position:absolute;top:0;bottom:0;left:var(--mx,92px);width:5px;border-left:1px solid var(--margin);border-right:1px solid var(--margin);opacity:.8}
+
+/* hero: otvorený diár */
+.spread{position:relative;margin:18px auto 0;display:grid;grid-template-columns:1fr 1fr;box-shadow:0 30px 60px -30px rgba(0,0,0,.6),0 0 0 6px var(--cover-hi)}
+.spread .pg{padding:var(--top,64px) 56px 96px calc(var(--mx,92px) + 34px)}
+.spread .l{box-shadow:inset -26px 0 30px -24px rgba(28,34,48,.35)}
+.spread .r{--mx:0px;padding-left:56px;box-shadow:inset 26px 0 30px -24px rgba(28,34,48,.35)}
+.spread .r::before{display:none}
+.spread .sc{color:var(--soft);line-height:var(--lh)}
+h1{font:700 clamp(58px,7vw,92px)/calc(var(--lh) * 3) var(--hand);color:var(--pen);margin-left:-6px;letter-spacing:-.005em}
+.intro{font:italic 400 17px/var(--lh) var(--book);max-width:26em}
+.intro small{display:block;font:400 13px/var(--lh) var(--book);font-style:normal;color:var(--soft)}
+.r h2{font:700 11.5px/var(--lh) var(--book);letter-spacing:.18em;text-transform:uppercase;color:var(--soft)}
+.notes{list-style:none;padding:0;font:500 27px/var(--lh) var(--hand);color:var(--pen)}
+.notes li{height:var(--lh);white-space:nowrap}
+.notes .nb{font:400 .66em/1 var(--book)}
+.notes li::before{content:"– ";color:rgba(37,70,160,.6)}
+.notes .mark{position:relative}
+.notes .mark svg{position:absolute;left:-6px;right:-6px;bottom:-9px;width:calc(100% + 12px);height:14px;overflow:visible}
+.go{display:flex;gap:12px;flex-wrap:wrap;margin-top:var(--lh)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;font:700 15px var(--book);text-decoration:none;transition:background-color .2s,color .2s}
+.btn.full{background:var(--cover);color:var(--paper)}
+.btn.full:hover{background:var(--ribbon)}
+.btn.line{border:1px solid var(--cover);background:var(--paper)}
+.btn.line:hover{background:var(--cover);color:var(--paper)}
+.ribbon{position:absolute;top:-18px;right:20px;width:34px;height:62%;background:linear-gradient(90deg,#8E1832,var(--ribbon) 40%,#B92A47 60%,#8E1832);clip-path:polygon(0 0,100% 0,100% 100%,50% calc(100% - 18px),0 100%);box-shadow:0 2px 0 rgba(0,0,0,.2);z-index:2}
+
+/* cenník: zápisy */
+.book2{margin:64px auto 0;position:relative;max-width:900px}
+.list{--mx:128px;--top:128px;padding:var(--top) 64px 64px calc(var(--mx) + 34px);box-shadow:0 30px 60px -30px rgba(0,0,0,.6),0 0 0 6px var(--cover-hi)}
+.list .head{position:absolute;top:34px;left:calc(var(--mx) + 34px);right:64px}
+.list .head h2{font:700 34px/1 var(--book);letter-spacing:-.01em}
+.list .head p{font-size:13px;line-height:1.5;color:var(--soft);margin-top:12px}
+.tabs{position:absolute;left:100%;top:150px;display:flex;flex-direction:column;gap:6px;margin-left:6px}
+.tabs a{writing-mode:vertical-rl;background:var(--paper-2);padding:18px 11px;font:700 11.5px/1 var(--book);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--soft);min-width:44px;text-align:center;box-shadow:inset 1px 0 0 rgba(0,0,0,.08)}
+.tabs a:hover{background:var(--paper);color:var(--ribbon)}
+.grp{scroll-margin-top:24px}
+.grp h3{font:700 38px/calc(var(--lh) * 2) var(--hand);color:var(--pen)}
+.grp + .grp{margin-top:var(--lh)}
+.items{list-style:none;padding:0}
+.items li{display:grid;grid-template-columns:1fr auto;gap:0 18px;position:relative;line-height:var(--lh)}
+.items .d{position:absolute;right:calc(100% + 34px + 14px);width:calc(var(--mx) - 20px);text-align:right;font-size:12.5px;color:var(--soft);white-space:nowrap}
+.items .p{font-weight:700;white-space:nowrap;text-align:right}
+.items .x{grid-column:1/-1;font:italic 400 13.5px/var(--lh) var(--book);color:var(--soft)}
+
+/* bez objednania */
+.walk{color:var(--paper);padding:96px 0 88px}
+.walk .w{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+.walk h2{font:700 clamp(64px,8vw,112px)/1 var(--hand);color:var(--paper)}
+.walk h2 span{display:block;font:italic 400 22px/1.4 var(--book);color:#AFBBD0;margin-top:14px}
+.walk blockquote{font:400 21px/1.6 var(--book);border-top:1px solid rgba(245,246,242,.25);padding-top:22px}
+.walk cite{display:block;font:400 13px/1.4 var(--book);font-style:normal;color:#AFBBD0;margin-top:12px}
+.walk .go{margin-top:28px}
+.walk .btn.full{background:var(--paper);color:var(--cover)}
+.walk .btn.full:hover{background:var(--ribbon);color:var(--paper)}
+.walk .btn.line{background:transparent;border-color:rgba(245,246,242,.5);color:var(--paper)}
+.walk .btn.line:hover{background:var(--paper);color:var(--cover)}
+
+/* kontakty */
+.addr{--mx:150px;--top:96px;max-width:900px;margin-inline:auto;padding:var(--top) 64px 64px calc(var(--mx) + 30px);box-shadow:0 30px 60px -30px rgba(0,0,0,.6),0 0 0 6px var(--cover-hi);margin-bottom:72px}
+.addr .head{position:absolute;top:30px;left:calc(var(--mx) + 30px)}
+.addr .head h2{font:700 30px/1 var(--book)}
+.addr dl{max-width:860px}
+.addr .row{position:relative}
+.addr dt{position:absolute;top:0;right:calc(100% + 30px + 16px);width:calc(var(--mx) - 24px);text-align:right;font:700 11px/var(--lh) var(--book);letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
+.addr dd{font:500 27px/var(--lh) var(--hand);color:var(--pen);margin-bottom:var(--lh)}
+.addr dd small{display:block;font:400 13px/var(--lh) var(--book);color:var(--soft)}
+.addr dd a{text-decoration:none}
+.addr dd .pr{font:400 16px/var(--lh) var(--book);color:var(--ink)}
+.addr .lk a{margin-right:22px}
+
+footer{color:#AFBBD0;font-size:13.5px;padding:0 0 40px}
+footer .w{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;border-top:1px solid rgba(245,246,242,.18);padding-top:24px}
+footer b{font:700 24px/1 var(--hand);color:var(--paper)}
+.mbar{display:none}
+
+@media (max-width:960px){
+  .spread{grid-template-columns:1fr}
+  .spread .pg{min-height:0}
+  .spread .r{box-shadow:none;padding-top:0;--top:0px}
+  .spread .l{box-shadow:none;padding-bottom:var(--lh)}
+  .ribbon{right:40px;height:220px}
+  .tabs{display:none}
+  .walk .w{grid-template-columns:1fr;gap:28px}
+}
+@media (max-width:640px){
+  :root{--lh:30px}
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  .w{width:calc(100% - 32px)}
+  .mast nav,.mast .t{display:none}
+  .mast .w{min-height:66px}
+  .mast .name{font-size:30px}
+  .spread{margin-top:6px}
+  .spread .pg{--mx:22px;--top:44px;padding:var(--top) 18px var(--lh) calc(var(--mx) + 22px)}
+  .spread .r{--mx:0px;padding:0 18px 44px 44px}
+  .spread .r::before{display:block;left:22px}
+  h1{font-size:58px;line-height:calc(var(--lh) * 2.5)}
+  .intro{font-size:15.5px}
+  .notes{font-size:24px}
+  .notes li{white-space:normal;height:auto}
+  .go .btn{flex:1 1 100%}
+  .ribbon{right:14px;width:24px;height:96px;top:-10px}
+  .spread .l{padding-right:46px}
+  .spread .sc{font-size:10.5px;letter-spacing:.14em}
+  .list,.addr{--mx:22px;--top:118px;padding:var(--top) 18px 40px calc(var(--mx) + 22px)}
+  .list .head,.addr .head{left:44px;right:18px;top:24px;display:block}
+  .list .head p{text-align:left;margin-top:10px}
+  .items li{grid-template-columns:1fr auto;grid-template-areas:"n n" "d p";font-size:15.5px}
+  .items li>span:nth-child(2){grid-area:n}
+  .items .p{grid-area:p}
+  .items .d{position:static;grid-area:d;width:auto;text-align:left;font-size:13px}
+  .items .x{grid-row:3}
+  .grp h3{font-size:32px}
+  .addr{--top:84px}
+  .addr dt{position:static;width:auto;text-align:left;padding:0}
+  .addr dd{font-size:23px;margin-bottom:var(--lh)}
+  .walk{padding:64px 0}
+  .walk blockquote{font-size:18px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;inset:auto 0 0 0;z-index:9;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--cover);border-top:1px solid rgba(245,246,242,.2)}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:50px;font:700 15px var(--book);text-decoration:none}
+  .mbar a:first-child{background:var(--paper);color:var(--cover)}
+  .mbar a:last-child{border:1px solid rgba(245,246,242,.5);color:var(--paper)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<p class="strip" role="note">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</p>
+
+<header class="mast">
+  <div class="w">
+    <a class="name" href="#">Hair by Elisabeth</a>
+    <nav aria-label="Navigácia"><a class="hl" href="#cennik">Cenník</a><a class="hl" href="#bez-objednania">Bez objednania</a><a class="hl" href="#kontakt">Kontakt</a></nav>
+    <a class="t fig" href="tel:+421903463121">0903 463 121</a>
+  </div>
+</header>
+
+<main>
+<div class="w">
+  <section class="spread" aria-label="Úvod">
+    <span class="ribbon" aria-hidden="true"></span>
+    <div class="pg mg l">
+      <p class="sc">Kaderníctvo · Dubnica nad Váhom</p>
+      <h1>Hair by Elisabeth</h1>
+      <p class="intro">„Hair by Elisabeth Dubnica nad Váhom je novo otvorené kaderníctvo s dlhoročnými skúsenosťami.“<small>— z profilu kaderníctva na Notino</small></p>
+      <p class="intro" style="font-style:normal">Námestie Matice Slovenskej 4262/22</p>
+    </div>
+    <div class="pg mg r">
+      <h2>Poznámky</h2>
+      <ul class="notes">
+        <li><span class="mark">bez objednania — stačí prísť<svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 60 3, 140 12, 210 6 S 285 5, 298 8" fill="none" stroke="#A61F3B" stroke-width="2.2" stroke-linecap="round"/></svg></span></li>
+        <li>s rezerváciou bez čakania</li>
+        <li>ženy, muži aj deti</li>
+        <li>strih, farba, melír, trvalá</li>
+        <li>spoločenské a svadobné účesy</li>
+        <li><span class="nb fig">5,0 ★</span> na Notino (<span class="nb fig">9</span> hodnotení)</li>
+      </ul>
+      <div class="go">
+        <a class="btn full" href="tel:+421903463121">Zavolať 0903 463 121</a>
+        <a class="btn line" href="https://www.notino.sk/salony/hair-by-elisabeth_1" rel="noopener">Rezervovať cez Notino</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="book2" id="cennik" aria-labelledby="h-cennik">
+    <div class="pg mg list">
+      <div class="head"><h2 id="h-cennik">Cenník</h2><p>Ceny podľa profilu na Notino (1.&nbsp;10.&nbsp;2026), overiť.</p></div>
+      <nav class="tabs" aria-label="Časti cenníka"><a href="#damske">Dámske</a><a href="#panske">Pánske</a><a href="#detske">Detské</a></nav>
+      <div class="grp" id="damske">
+          <h3>Dámske</h3>
+          <ul class="items fig">
+            <li><span class="d">30 min</span><span>Dámsky strih</span><span class="p">11,50 – 13,00 €</span></li>
+            <li><span class="d">1 h</span><span>Balík strihanie</span><span class="p">31,50 – 43,00 €</span><span class="x">umývanie + kondicionér/maska, strihanie, fúkanie, styling</span></li>
+            <li><span class="d">15 min</span><span>Fúkaná vlasov</span><span class="p">5,50 – 7,50 €</span></li>
+            <li><span class="d">2 h</span><span>Farbenie odrastov s fúkanou</span><span class="p">35 – 55 €</span></li>
+            <li><span class="d">2 h</span><span>Farbenie celej dĺžky s fúkanou</span><span class="p">40 – 60 €</span></li>
+            <li><span class="d">1 h 30 – 4 h</span><span>Melír so strihom</span><span class="p">46,50 – 68,00 €</span></li>
+            <li><span class="d">20 min</span><span>Styling vlasov žehličkou</span><span class="p">7 – 9 €</span></li>
+            <li><span class="d">20 min</span><span>Styling vlasov kulmou</span><span class="p">7 – 9 €</span></li>
+            <li><span class="d">45 min – 1 h</span><span>Spoločenský účes</span><span class="p">30 – 150 €</span></li>
+            <li><span class="d">45 min – 1 h</span><span>Svadobný účes</span><span class="p">50 – 100 €</span></li>
+            <li><span class="d">2 h</span><span>Trvalá na vlasy</span><span class="p">37 – 55 €</span></li>
+            <li><span class="d">2 h</span><span>Trvalá na vlasy + strih</span><span class="p">48,50 – 66,50 €</span></li>
+            <li><span class="d">5 min</span><span>Maska na vlasy</span><span class="p">5 – 7 €</span></li>
+            <li><span class="d">15 min</span><span>Umývanie vlasov</span><span class="p">4,50 – 6,00 €</span></li>
+            <li><span class="d">40 min</span><span>Umývanie vlasov + sušenie</span><span class="p">20 – 30 €</span></li>
+          </ul>
+        </div>
+          <div class="grp" id="panske">
+            <h3>Pánske</h3>
+            <ul class="items fig">
+              <li><span class="d">30 min</span><span>Pánsky strih</span><span class="p">11,50 €</span></li>
+              <li><span class="d">20 min</span><span>Úprava brady strojčekom</span><span class="p">8 €</span></li>
+              <li><span class="d">15 min</span><span>Umývanie vlasov</span><span class="p">4,50 – 6,00 €</span></li>
+            </ul>
+          </div>
+          <div class="grp" id="detske">
+            <h3>Detské</h3>
+            <ul class="items fig">
+              <li><span class="d">30 min</span><span>Dievčenský strih – staršie dievčatá</span><span class="p">11,50 – 13,00 €</span></li>
+              <li><span class="d">30 min</span><span>Dievčenský strih – mladšie dievčatá</span><span class="p">11,50 – 13,00 €</span></li>
+              <li><span class="d">30 min</span><span>Chlapčenský strih – mladší chlapci</span><span class="p">11,50 – 13,00 €</span></li>
+              <li><span class="d">30 min</span><span>Chlapčenský strih – starší chlapci</span><span class="p">11,50 – 13,00 €</span></li>
+            </ul>
+          </div>
+    </div>
+  </section>
+</div>
+
+<section class="walk" id="bez-objednania" aria-labelledby="h-walk">
+  <div class="w">
+    <h2 id="h-walk">Stačí prísť.<span>Alebo si podržte termín vopred.</span></h2>
+    <div>
+      <blockquote>„Ponúkame kvalitné služby pre ženy, mužov aj deti – bez nutnosti objednávania. Ak si však zarezervujete termín, ušetríte si čakanie a získate istotu svojho miesta.“<cite>— z profilu kaderníctva na Notino</cite></blockquote>
+      <div class="go">
+        <a class="btn full" href="tel:+421903463121">Zavolať</a>
+        <a class="btn line" href="https://www.notino.sk/salony/hair-by-elisabeth_1" rel="noopener">Rezervovať cez Notino</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="w">
+  <section class="pg mg addr" id="kontakt" aria-labelledby="h-kontakt">
+    <div class="head"><h2 id="h-kontakt">Kontakty</h2></div>
+    <dl>
+      <div class="row"><dt>Adresa</dt><dd>Námestie Matice Slovenskej 4262/22<small>018 41 Dubnica nad Váhom · <a class="hl" href="https://www.google.com/maps/search/Hair+by+Elisabeth+Dubnica+nad+V%C3%A1hom" rel="noopener">otvoriť v Mapách Google</a></small></dd></div>
+      <div class="row"><dt>Telefón</dt><dd><a class="fig" href="tel:+421903463121">+421 903 463 121</a></dd></div>
+      <div class="row"><dt>Hodiny</dt><dd><span class="pr">Ukážka návrhu: otváracie hodiny doplní kaderníctvo.</span><small>Bez nutnosti objednávania (podľa profilu na Notino).</small></dd></div>
+      <div class="row"><dt>Hodnotenie</dt><dd><span class="pr fig">5,0 ★ Notino · 9 hodnotení</span><small>Notino, 1. 10. 2026 · Google 5,0 ★ (11) podľa verejných údajov, overiť</small></dd></div>
+      <div class="row"><dt>Odkazy</dt><dd class="lk"><span class="pr"><a class="hl" href="https://www.notino.sk/salony/hair-by-elisabeth_1" rel="noopener">Profil na Notino</a><a class="hl" href="https://www.facebook.com/people/Hair-by-Elisabeth/100082995439540/" rel="noopener">Facebook</a></span><small>Facebook podľa verejných údajov, overiť.</small></dd></div>
+    </dl>
+  </section>
+</div>
+</main>
+
+<footer><div class="w"><b>Hair by Elisabeth</b><span>Neoficiálny návrh webu · webdavid.sk · 2026</span></div></footer>
+
+<nav class="mbar" aria-label="Rýchle akcie"><a href="tel:+421903463121">Zavolať</a><a href="https://www.notino.sk/salony/hair-by-elisabeth_1" rel="noopener">Rezervovať</a></nav>
